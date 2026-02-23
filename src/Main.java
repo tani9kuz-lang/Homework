@@ -6,8 +6,7 @@ public class Main {
         int age = 17;
         if (age >= 18) {
             System.out.println("Тебе уже 18 или больше лет;");
-        }
-        if (age < 18) {
+        } else{
             System.out.println("Возраст совершеннолетия еще не наступил, нужно немного подождать.");
         }
 
@@ -15,8 +14,7 @@ public class Main {
         byte temperature = 7;
         if (temperature < 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
-        }
-        if (temperature > 5) {
+        } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
 
@@ -24,8 +22,7 @@ public class Main {
         short speed = 140;
         if (speed <= 60) {
             System.out.println("Ваша скорость " + speed + " км/ч можно ездить спокойно");
-        }
-        if (speed > 60) {
+        } else {
             System.out.println("Ваша скорость " + speed + " км/ч придется заплатить штраф");
         }
 
@@ -40,21 +37,20 @@ public class Main {
         }
         if (age2 >= 18 && age2 <= 24) {
             System.out.println("Если возраст человека " + age2 + " то его место в университете");
-        }
-        if (age2 > 24) {
+        } else {
             System.out.println("Если возраст человека " + age2 + " то ему пора ходить на работу");
         }
 
         //Task 5
-        int ageOfChild = 12;
+        int ageOfChild = 2;
         if (ageOfChild < 5) {
             System.out.println("Если возраст ребенка равен " + ageOfChild + " то ему нельзя кататься на атракционе");
         }
-        if (ageOfChild > 5 && ageOfChild <= 14) {
+        if (ageOfChild >= 5 && ageOfChild <= 14) {
             System.out.println("Если возраст ребенка " + ageOfChild + " он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
         }
-        if (ageOfChild > 14) {
-            System.out.println("Если возратс ребенка " + " то он может кататься без сопровождения взрослого");
+        if (ageOfChild > 14){
+            System.out.println("Если возраст ребенка " + ageOfChild + " то он может кататься без сопровождения взрослого");
         }
 
         //Task 6
