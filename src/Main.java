@@ -58,7 +58,6 @@ public class Main {
         byte totalNumberOfSeats = 102;
         byte seatingPlaces = 60;
         byte standingPlace = (byte) (totalNumberOfSeats - seatingPlaces);
-
         byte standingPlaceOccupied = 22;
         byte occupiedSeatsPlace = 68;
         if (standingPlaceOccupied < standingPlace) {
