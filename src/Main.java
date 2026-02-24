@@ -27,8 +27,7 @@ public class Main {
         }
 
         //Task 4
-
-        int age2 = 40;
+        int age2 = 43;
         if (age2 >= 2 && age2 <= 6) {
             System.out.println("Если возраст человека равен " + age2 + " лет, то ему нужно ходить в детский сад");
         }
@@ -37,8 +36,7 @@ public class Main {
         }
         if (age2 >= 18 && age2 <= 24) {
             System.out.println("Если возраст человека " + age2 + " то его место в университете");
-        }
-        if (age2 >24){
+        } else if (age2 > 24){
             System.out.println("Если возраст человека " + age2 + " то ему пора ходить на работу");
         }
 
@@ -55,18 +53,14 @@ public class Main {
         }
 
         //Task 6
-        byte totalNumberOfSeats = 102;
-        byte seatingPlaces = 60;
-        byte standingPlace = (byte) (totalNumberOfSeats - seatingPlaces);
-        byte standingPlaceOccupied = 22;
-        byte occupiedSeatsPlace = 68;
-        if (standingPlaceOccupied < standingPlace) {
-            System.out.println("В вагоне есть свободные стоячие места");
-        }
-        if (occupiedSeatsPlace < seatingPlaces) {
+        byte occupiedPlace = 103;
+        if (occupiedPlace < 60 ){
             System.out.println("в вагоне есть свободные сидячие места");
         }
-        if (occupiedSeatsPlace >= seatingPlaces && standingPlaceOccupied >= standingPlace) {
+        if (occupiedPlace >= 60 && occupiedPlace < 102){
+            System.out.println("В вагоне есть свободные стоячие места");
+        }
+        if (occupiedPlace >=102){
             System.out.println("В вагоне нет свободных мест");
         }
 
