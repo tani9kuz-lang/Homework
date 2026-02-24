@@ -27,16 +27,14 @@ public class Main {
         }
 
         //Task 4
-        int age2 = 43;
+        int age2 = 3;
         if (age2 >= 2 && age2 <= 6) {
             System.out.println("Если возраст человека равен " + age2 + " лет, то ему нужно ходить в детский сад");
-        }
-        if (age2 >= 7 && age2 <= 17) {
+        } else if (age2 >= 7 && age2 <= 17) {
             System.out.println("Если возраст человека " + age2 + " лет, то ему нужно ходить в школу");
-        }
-        if (age2 >= 18 && age2 <= 24) {
+        } else if (age2 >= 18 && age2 <= 24) {
             System.out.println("Если возраст человека " + age2 + " то его место в университете");
-        } else if (age2 > 24){
+        } else if (age2 > 24) {
             System.out.println("Если возраст человека " + age2 + " то ему пора ходить на работу");
         }
 
@@ -44,23 +42,19 @@ public class Main {
         int ageOfChild = 14;
         if (ageOfChild < 5) {
             System.out.println("Если возраст ребенка равен " + ageOfChild + " то ему нельзя кататься на атракционе");
-        }
-        if (ageOfChild >= 5 && ageOfChild < 14) {
+        } else if (ageOfChild >= 5 && ageOfChild < 14) {
             System.out.println("Если возраст ребенка " + ageOfChild + " он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
-        }
-        if (ageOfChild >= 14){
+        } else {
             System.out.println("Если возраст ребенка " + ageOfChild + " то он может кататься без сопровождения взрослого");
         }
 
         //Task 6
-        byte occupiedPlace = 103;
+        byte occupiedPlace = 99;
         if (occupiedPlace < 60 ){
             System.out.println("в вагоне есть свободные сидячие места");
-        }
-        if (occupiedPlace >= 60 && occupiedPlace < 102){
+        } else if ( occupiedPlace < 102){
             System.out.println("В вагоне есть свободные стоячие места");
-        }
-        if (occupiedPlace >=102){
+        } else {
             System.out.println("В вагоне нет свободных мест");
         }
 
@@ -71,10 +65,9 @@ public class Main {
         if (one > two && one > three) {
             System.out.println("Чило " + one + " самое большое");
         }
-        if (two > one && two > three) {
+        else if (two > one && two > three) {
             System.out.println("Число " + two + " самое большое");
-        }
-        if (three > one && three > two) {
+        } else {
             System.out.println("Число " + three + " самое большое");
         }
     }
